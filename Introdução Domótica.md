@@ -52,3 +52,5 @@ Deve-se admitir que a automação residencial realmente permite tudo. O único l
 [Idelc-Plus | Emmanuel Gallay - LA DOMOTIQUE, C’EST QUOI ?](https://www.idelecplus.com/blog/la-domotique-cest-quoi)
 
 Muito obrigado ao [Caio Meira](https://github.com/CaioMeira) e ao [Gabriel Peres](https://github.com/imperes) pois só descobri como editar texto no github vendo seus trabalhos :sweat_smile:
+
+***Marcelo Poyer Radetski***

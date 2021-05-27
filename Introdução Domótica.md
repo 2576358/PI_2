@@ -1,3 +1,4 @@
+***Marcelo Poyer Radetski***
 
 # **AUTOMAÇÃO RESIDENCIAL - DOMÓTICA**
 
@@ -35,7 +36,7 @@ A automação residencial é uma verdadeira revolução para pessoas com mobilid
 Um sistema de automação residencial também economiza energia. Com efeito, desde que a instalação seja realizada de forma correta, ela permite uma economia de energia de até 30% em uma residência.
 Os edifícios devem ser mais inteligentes e comunicativos para reduzir o consumo. Para tal, podemos utilizar a automatização de persianas, o sistema de aquecimento ou ainda a criação de cenários de utilização de diversos equipamentos...
 
-## **A domótica incompreendida**
+## **A consolidação da domótica**
 
 A domótica está sendo cada vez mais exportada para fora de casa. A cada ano, há cada vez mais periféricos e objetos conectados para o exterior. um detector de movimento que liga as luzes se estiver escuro. Um portão que se abre quando você chega. Tomadas conectadas no jardim para luzes de Natal automatizadas. É até possível conectar acessórios de uma piscina (aquecimento automático).
 
@@ -53,4 +54,3 @@ Deve-se admitir que a automação residencial realmente permite tudo. O único l
 
 Muito obrigado ao [Caio Meira](https://github.com/CaioMeira) e ao [Gabriel Peres](https://github.com/imperes) pois só descobri como editar texto no github vendo seus trabalhos :sweat_smile:
 
-***Marcelo Poyer Radetski***

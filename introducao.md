@@ -8,7 +8,7 @@
 A domótica é um conjunto des técnicas utilizadas para controlar, programar e automatizar uma casa. Para isso, ela utiliza as áreas de eletrônica, telecomunicações e automação.
 A domótica opera em um campo técnico e informatico muito amplo e permite a programação da maioria dos eletrodomésticos e dispositivos elétricos usados em uma casa. Podem ser dispositivos de aquecimento, vários tipos de iluminação, dispositivos audiovisuais e eletrodomésticos, sistemas de controle para abrir / fechar portas e janelas, etc.
 
-![smartautomacao](http://www.smartautomacao.com.br/home/wp-content/uploads/2015/08/Casa-rural-dom%C3%B3tica-680x504.jpg)
+![Imagem](http://www.smartautomacao.com.br/home/wp-content/uploads/2015/08/Casa-rural-dom%C3%B3tica-680x504.jpg)
 
 ## **Princípio da domótica**
 

@@ -1,5 +1,3 @@
-***Marcelo Poyer Radetski***
-
 # **AUTOMAÇÃO RESIDENCIAL - DOMÓTICA**
 
 

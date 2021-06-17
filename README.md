@@ -1,9 +1,9 @@
-# PI_2
+### Projeto Integrador 2
 
 Repositório destinado ao Projeto Integrador 2 da 4º fase de Engenharia Eletrônica no IFSC - Câmpus Florianópolis
 
 ***Marcelo Poyer Radetski***
 
-## [**Introdução**](introducao.md)
+* [**Introdução**](introducao.md)
 
-## [**Concepção**](concepcao.md)
+* [**Concepção**](concepcao.md)

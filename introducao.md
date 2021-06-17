@@ -19,19 +19,19 @@ Quanto mais sofisticado e avançado o equipamento utilizado é, mais cenários p
 
 A automação residencial tem muitas vantagens, sendo as mais notáveis:
 
-### * **Conforto**
+* **Conforto**
 A primeira vantagem da automação residencial é o conforto de vida que oferece aos usuários ao centralizar o acesso e o controle dos equipamentos domésticos. A tecnologia também possibilita o benefício de uma economia significativa de tempo no dia a dia, programando as tarefas recorrentes da vida cotidiana.
 Assim, a domótica facilita a vida ao dar, por exemplo, a possibilidade de gerir todo o sistema de iluminação de forma a programar o acendimento e apagamento das luzes em determinados momentos de acordo com os hábitos dos utilizadores.
 Esta tecnologia permite ainda a gestão de aberturas (janelas e portas), a programação de equipamentos como a máquina de lavar louça ou a máquina de lavar roupa. A automação residencial permite, assim, manter o controle permanente da casa, sem ter que estar presente fisicamente.
 
-### * **Segurança**
+* **Segurança**
 Além do conforto proporcionado pela automação residencial, essa tecnologia também auxilia o usuário no dia a dia e oferece um certo nível de segurança.
 Graças à domótica, é possível programar o sistema de abertura de portas através de reconhecimento de voz, alarmes e câmaras, notificações de alerta em caso de roubo, etc. Tudo isso sem ter que estar continuamente presente em casa. Os sistemas de alarme e vigilância por vídeo podem ser controlados remotamente usando um smartphone ou tablet.
 
-### * **Cuidados domiciliares**
+* **Cuidados domiciliares**
 A automação residencial é uma verdadeira revolução para pessoas com mobilidade reduzida como idosos, crianças e pessoas com doenças motoras. Com efeito, esta tecnologia é uma solução muito eficaz para manter estas categorias de utilizadores em casa, tornando as suas viagens mais seguras, evitando acidentes domésticos de que podem ser vítimas graças aos detectores de movimento que acendem a luz, sistemas de aviso, sinais luminosos e muito mais.
 
-### * **Fonte de economia de energia**
+* **Fonte de economia de energia**
 Um sistema de automação residencial também economiza energia. Com efeito, desde que a instalação seja realizada de forma correta, ela permite uma economia de energia de até 30% em uma residência.
 Os edifícios devem ser mais inteligentes e comunicativos para reduzir o consumo. Para tal, podemos utilizar a automatização de persianas, o sistema de aquecimento ou ainda a criação de cenários de utilização de diversos equipamentos...
 

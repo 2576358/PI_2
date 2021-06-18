@@ -52,4 +52,4 @@ LOCQUENEUX, Cédric. La domotique, c’est quoi ? 2015. Disponível em: https://
 
 GALLAY, Emmanuel. LA DOMOTIQUE, C’EST QUOI ? 2019. Disponível em: https://www.idelecplus.com/blog/la-domotique-cest-quoi. Acesso em: 27 maio 2021.
 
-Muito obrigado ao [Caio Meira](https://github.com/CaioMeira) e ao [Gabriel Peres](https://github.com/imperes) pois só descobri como editar texto no github vendo seus trabalhos :sweat_smile:
+Muito obrigado ao [Caio Meira](https://github.com/CaioMeira) e ao [Gabriel Peres](https://github.com/imperes)

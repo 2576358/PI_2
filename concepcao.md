@@ -13,6 +13,6 @@ O principal objetivo deste projeto é a programação, controle e automação (r
 * Conectar sensores e componentes com propósitos pré definidos em cômodos da maquete residencial para ter controle sobre os parâmetros de acordo com as necessidades estabelecidas;
 * Automatizar o sistema.
 
-### Planta ca casa
+### Planta da casa
 
 ![casa_pi2](https://user-images.githubusercontent.com/84546006/123334647-c8852600-d519-11eb-81b9-aad5951513af.png)

@@ -12,3 +12,7 @@ O principal objetivo deste projeto é a programação, controle e automação (r
 * Implementar todo o sistema elétrico da maquete residencial, incluindo sistema de iluminação, sensor de presença, sensor de gás, portão eletrônico e outros dispostivos planejados;
 * Conectar sensores e componentes com propósitos pré definidos em cômodos da maquete residencial para ter controle sobre os parâmetros de acordo com as necessidades estabelecidas;
 * Automatizar o sistema.
+
+### Planta ca casa
+
+![casa_pi2](https://user-images.githubusercontent.com/84546006/123309354-2fdfad80-d4fb-11eb-9d4c-cfbce2b81a05.png)

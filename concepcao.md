@@ -15,4 +15,4 @@ O principal objetivo deste projeto é a programação, controle e automação (r
 
 ### Planta da casa
 
-![casa_pi2](https://user-images.githubusercontent.com/84546006/123334647-c8852600-d519-11eb-81b9-aad5951513af.png)
+![casa_pi2](https://user-images.githubusercontent.com/84546006/123335349-b48df400-d51a-11eb-9b62-9690ec598bd8.png)

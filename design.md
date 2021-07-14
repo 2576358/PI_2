@@ -23,4 +23,4 @@ Tendo em vista estes três objetivos foram selecionados os seguintes componentes
 
 ## **Maquete Eletrônica**
 
-![fritzing](https://user-images.githubusercontent.com/84546006/125698895-ff98ade5-c621-42e9-b851-4531236a340f.png)
+![image](https://user-images.githubusercontent.com/84546006/125704296-9a743a41-4d7c-48be-a0fd-3402f6c67877.png)

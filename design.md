@@ -14,13 +14,13 @@ Tendo em vista estes três objetivos foram selecionados os seguintes componentes
 | Componentes  |  Quantidade  |
 | ------------------- | ------------------- |
 |  Arduino MEGA |  1 |
-|  Sensor de movimento PIR |  2 |
+|  Sensor de movimento PIR |  1 |
 |  Servo motor TowerPro SG90 |  1 |
 |  Detector de fumaça MQ-4 |  1 |
 |  Matriz de leds 8x8 MAX7219 |  1 |
-|  Leds |  7 |
-|  Resistores |  7 |
+|  Leds 3,2V|  9 |
+|  Resistores 470 |  9 |
 
 ## **Maquete Eletrônica**
 
-Ainda não finalizada.
+![fritzing](https://user-images.githubusercontent.com/84546006/125698895-ff98ade5-c621-42e9-b851-4531236a340f.png)

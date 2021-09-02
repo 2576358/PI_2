@@ -27,7 +27,6 @@ unsigned long tempo_tarefa_1 = millis();
 const unsigned long periodo_tarefa_2 = 2000;
 unsigned long tempo_tarefa_2 = millis();
 char DATA;
-int PIRSTATE = LOW;
 int PIR_VALUE;
 int THRESHOLD = 400;
 int MQ2_VALUE;
@@ -115,13 +114,9 @@ void pir(unsigned long tempo_atual) {
     PIR_VALUE = digitalRead(PIR);
     if (PIR_VALUE == HIGH) {
       digitalWrite(LED10, HIGH);
-      if (PIRSTATE == LOW)
-        PIRSTATE = HIGH;
     }
     else {
       digitalWrite(LED10, LOW);
-      if (PIRSTATE == HIGH)
-        PIRSTATE = LOW;
     }
   }
 }

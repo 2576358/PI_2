@@ -8,7 +8,7 @@ Ainda não terminada.
 
 ### **Teste**
 
-Após obtenção dos materiais desejados começei então uma fase de teste, de modo a verificar o bom funcionamento de cada componente. Grande parte destes testes foram realizados com exemplos encontrados na internet ou do próprio software Arduino, testando um elemento de cada vez para averiguar seu comportamento.
+Após obtenção dos materiais desejados foi feita uma fase de teste, com o intuito de verificar o bom funcionamento de cada componente. Grande parte destes testes foram realizados com exemplos encontrados na internet ou exemplos do próprio software Arduino. Todos os componentes foram testados, um de cada vez, para averiguar seu comportamento.
 
 ### **Código**
 
@@ -18,7 +18,7 @@ Além das funções para cada componente também foi utilizada uma função para
 
 #### **Controle Serial:**
 
-Está função serve para controlar os componentes pelo teclado, assim que uma tecla for pressionada ela irá executar a ação associada a esta tecla. Essa função serve principalmente como controle para a iluminação mas também está sendo utilizada para obter os dados obtidos pelo sensor de gás.
+Está função serve para controlar os componentes pelo teclado, assim que uma tecla for pressionada ela irá executar a ação associada a esta tecla. Essa função serve principalmente como controle para a iluminação mas também está sendo utilizada para obter os dados obtidos pelos sensores de gás e umidade/temperatura.
 
 ~~~C
 void serial() {
@@ -75,7 +75,7 @@ void serial() {
 
 #### **Sensor de movimentos:**
 
-Esta função irá executar quando o estado lógico do PIR for HIGH, portanto, assim que um movimento for detectado pelo sensor ele irá ascender um led (LED10). Essa função pode ser utilizada em um corredor/garagem para ascender as luzes quando tiver alguém.
+Esta função irá executar quando o sensor de movimento detectar algo (estado lógico do PIR for HIGH), portanto, assim que um movimento for detectado pelo sensor ele irá ascender um led (LED10). Essa função pode ser utilizada em um corredor/garagem para ascender as luzes quando tiver alguém.
 
 ~~~C
 void pir(unsigned long tempo_atual) {
@@ -118,12 +118,8 @@ void mq2(unsigned long tempo_atual) {
 }
 ~~~
 
-#### **Sensor de umidade:**
-
-Incremento de ultima hora ainda precisa ser feito.
-
 Algumas considerações:
 
-Infelizmente não consegui fazer funcionar o servo motor, fiz vários testes com o servo e percebi que ele tinha um comportamento anormal e mesmo pesquisando sobre não encontrei nenhuma solução, encaminhei meu código para um colega e o mesmo disse que estava funcionando muito bem portanto concluí que sou burro ou é problema do servo. Além disso acabei desistindo de implementar a matriz led 8x8 pois fiquei desencorajado ao ver exemplos de códigos. Além disso queimei o adaptador para o arduino, quando liguei o adaptador na tomada ouvi um estouro e aquele cheirinho de queimado, fico feliz por ter ligado ele na tomada sem conectar no arduino hahaha.
+Infelizmente não consegui fazer funcionar o servo motor, fiz vários testes com o servo e percebi que ele tinha um comportamento anormal e mesmo pesquisando sobre não encontrei nenhuma solução, encaminhei meu código para um colega e o mesmo disse que estava funcionando muito bem portanto concluí que ou eu sou burro ou é problema do servo. Além disso acabei desistindo de implementar a matriz led 8x8 pois fiquei desencorajado ao ver exemplos de códigos. Além disso queimei o adaptador para o arduino, quando liguei o adaptador na tomada ouvi um estouro e aquele cheirinho de queimado, por sorte ele não estava conectado no arduino.
 
 Isso resume o código atual, para ver o código completo [clique aqui](https://github.com/MarceloPoyer/Projeto_Integrador_2/edit/main/codigo.ino).

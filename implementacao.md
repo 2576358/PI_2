@@ -18,7 +18,7 @@ Além das funções para cada componente também foi utilizada uma função para
 
 #### **Controle Serial:**
 
-Está função serve para controlar os componentes pelo teclado, assim que uma tecla for pressionada ela irá executar a ação associada a esta tecla. Essa função serve principalmente como controle para a iluminação mas também está sendo utilizada para obter os dados obtidos pelos sensores de gás e umidade/temperatura.
+Está função serve para controlar os componentes pelo teclado, assim que uma tecla for pressionada ela irá executar a ação associada a esta tecla. Essa função serve principalmente como controle para a iluminação mas também está sendo utilizada para obter os dados obtidos pelos sensores de gás e umidade/temperatura (criei dois novos "switch case" para as duas ultimas opções pois não consegui fazer funcionar de outra forma).
 
 ~~~C
 void serial() {
@@ -68,6 +68,24 @@ void serial() {
         Serial.print("Pin A5: ");
         Serial.println(MQ2_VALUE);
         break;
+    }
+    switch (DATA) {
+      case 'e':
+        float t = dht.readTemperature();
+        Serial.print("Temperatura: ");
+        Serial.print(t);
+        Serial.println(" *C");
+        break;
+    }
+    switch (DATA) {
+      case 'w':
+        float h = dht.readHumidity();
+        Serial.print("Umidade: ");
+        Serial.print(h);
+        break;
+    }
+  }
+}
     }
   }
 }

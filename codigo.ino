@@ -18,7 +18,12 @@ Marcelo Poyer Radetski
 #define PIR 12
 #define MQ2 A5
 #define BUZZER 10
+#define DHTPIN 2
+#define DHTTYPE DHT11
+#include "DHT.h"
 #include <Servo.h>
+DHT dht(DHTPIN, DHTTYPE);
+
 
 //criação de variáveis------------------------------------------
 
@@ -49,6 +54,7 @@ void setup() {
   pinMode(PIR, INPUT);
   pinMode(BUZZER, OUTPUT);
   pinMode(MQ2, INPUT);
+  dht.begin();
 }
 
 //controle do sistema pelo teclado------------------------------
@@ -99,6 +105,21 @@ void serial() {
         int MQ2_VALUE = analogRead(MQ2);
         Serial.print("Pin A5: ");
         Serial.println(MQ2_VALUE);
+        break;
+    }
+    switch (DATA) {
+      case 'e':
+        float t = dht.readTemperature();
+        Serial.print("Temperatura: ");
+        Serial.print(t);
+        Serial.println(" *C");
+        break;
+    }
+    switch (DATA) {
+      case 'w':
+        float h = dht.readHumidity();
+        Serial.print("Umidade: ");
+        Serial.print(h);
         break;
     }
   }

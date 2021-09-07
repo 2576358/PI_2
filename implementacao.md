@@ -18,7 +18,7 @@ Além das funções para cada componente também foi utilizada uma função para
 
 #### **Controle Serial:**
 
-Está função serve para controlar os componentes pelo teclado, assim que uma tecla for pressionada ela irá executar a ação associada a esta tecla. Essa função serve principalmente como controle para a iluminação mas também está sendo utilizada para obter os dados obtidos pelos sensores de gás e umidade/temperatura (criei dois novos "switch case" para as duas ultimas opções pois não consegui fazer funcionar de outra forma).
+Está função serve para controlar alguns componentes pelo teclado, assim que uma tecla for pressionada ela irá executar a ação associada a esta tecla. Essa função serve principalmente como controle para a iluminação mas também está sendo utilizada para obter os dados obtidos pelos sensores de gás e umidade/temperatura além do servo motor utilizado para o portão (criei dois novos "switch case" para as duas ultimas opções pois não consegui fazer funcionar de outra forma, mesma coisa para o servo).
 
 ~~~C
 void serial() {
@@ -27,48 +27,25 @@ void serial() {
     //Serial.print("Entrada recebida: ");
     Serial.println(DATA);
     switch (DATA) {
+    
+    //controle iluminação---------------------
+    
       case 'z':
         digitalWrite(LED1, !digitalRead(LED1));
         Serial.print("Led 1 alterado.\n");
         break;
-      case 'x':
-        digitalWrite(LED2, !digitalRead(LED2));
-        Serial.print("Led 2 alterado.\n");
-        break;
-      case 'c':
-        digitalWrite(LED3, !digitalRead(LED3));
-        Serial.print("Led 3 alterado.\n");
-        break;
-      case 'v':
-        digitalWrite(LED4, !digitalRead(LED4));
-        Serial.print("Led 4 alterado.\n");
-        break;
-      case 'b':
-        digitalWrite(LED5, !digitalRead(LED5));
-        Serial.print("Led 5 alterado.\n");
-        break;
-      case 'n':
-        digitalWrite(LED6, !digitalRead(LED6));
-        Serial.print("Led 6 alterado.\n");
-        break;
-      case 'm':
-        digitalWrite(LED7, !digitalRead(LED7));
-        Serial.print("Led 7 alterado.\n");
-        break;
-      case 'a':
-        digitalWrite(LED8, !digitalRead(LED8));
-        Serial.print("Led 8 alterado.\n");
-        break;
-      case 's':
-        digitalWrite(LED9, !digitalRead(LED9));
-        Serial.print("Led 9 alterado.\n");
-        break;
+        
+    //controle sensor de gás------------------
+        
       case 'q':
         int MQ2_VALUE = analogRead(MQ2);
         Serial.print("Pin A5: ");
         Serial.println(MQ2_VALUE);
         break;
     }
+    
+    //controle sensor de temperatura/umidade--
+    
     switch (DATA) {
       case 'e':
         float t = dht.readTemperature();
@@ -84,8 +61,20 @@ void serial() {
         Serial.print(h);
         break;
     }
-  }
-}
+    
+    //controle servo--------------------------
+    
+    if (DATA == 'o') {
+      Serial.print("Abrindo portão!");
+      for (pos == 60 ; pos < 150; pos++) {
+        s.write(pos);
+      }
+    }
+    if (DATA == 'c') {
+      Serial.print("Fechando portão!");
+      for (pos == 150; pos > 60; pos--) {
+        s.write(pos);
+      }
     }
   }
 }
@@ -138,6 +127,6 @@ void mq2(unsigned long tempo_atual) {
 
 Algumas considerações:
 
-Infelizmente não consegui fazer funcionar o servo motor, fiz vários testes com o servo e percebi que ele tinha um comportamento anormal e mesmo pesquisando sobre não encontrei nenhuma solução, encaminhei meu código para um colega e o mesmo disse que estava funcionando muito bem portanto concluí que ou eu sou burro ou é problema do servo. Além disso acabei desistindo de implementar a matriz led 8x8 pois fiquei desencorajado ao ver exemplos de códigos. Além disso queimei o adaptador para o arduino, quando liguei o adaptador na tomada ouvi um estouro e aquele cheirinho de queimado, por sorte ele não estava conectado no arduino.
+Acabei desistindo de implementar a matriz led 8x8 pois fiquei desencorajado ao ver exemplos de códigos. Também acabei queimando o adaptador para o arduino, ao liga-lo na tomada ouvi um estouro e aquele cheirinho de queimado, por sorte ele não estava conectado ao arduino no momento do ocorrido.
 
 Isso resume o código atual, para ver o código completo [clique aqui](https://github.com/MarceloPoyer/Projeto_Integrador_2/edit/main/codigo.ino).

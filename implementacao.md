@@ -18,7 +18,7 @@ Além das funções para cada componente também foi utilizada uma função para
 
 #### **Controle Serial:**
 
-Está função serve para controlar alguns componentes pelo teclado, assim que uma tecla for pressionada ela irá executar a ação associada a esta tecla. Essa função serve principalmente como controle e está sendo utilizada para a iluminação, para apresentar os dados obtidos pelos sensores (gás/umidade/temperatura), e para o servo motor utilizado para o portão (criei dois novos "switch case" para as duas ultimas opções pois não consegui fazer funcionar de outra forma).
+Está função serve para controlar alguns componentes pelo teclado, assim que uma tecla for pressionada ela irá executar a ação associada a esta tecla. Essa função serve principalmente como controle e está sendo utilizada para a iluminação, para apresentar os dados obtidos pelos sensores (gás/umidade/temperatura), e para o servo motor utilizado para o portão (tive de utilizar "if" para as quatro ultimas opções pois não consegui fazer funcionar de outra forma).
 
 ~~~C
 void serial() {

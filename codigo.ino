@@ -4,12 +4,6 @@ Engenharia Eletrônica
 Projeto Integrador II
 Marcelo Poyer Radetski
 */
-/*
-INSTITUTO FEDERAL DE SANTA CATARINA
-Engenharia Eletrônica
-Projeto Integrador II
-Marcelo Poyer Radetski
-*/
 //atribuição pinos----------------------------------------------
 #define LED1 22
 #define LED2 23

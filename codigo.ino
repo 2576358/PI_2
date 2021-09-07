@@ -24,7 +24,6 @@ Marcelo Poyer Radetski
 #include <Servo.h>
 DHT dht(DHTPIN, DHTTYPE);
 
-
 //criação de variáveis------------------------------------------
 
 const unsigned long periodo_tarefa_1 = 1000;
@@ -32,9 +31,10 @@ unsigned long tempo_tarefa_1 = millis();
 const unsigned long periodo_tarefa_2 = 2000;
 unsigned long tempo_tarefa_2 = millis();
 char DATA;
-int PIR_VALUE;
-int THRESHOLD = 400;
-int MQ2_VALUE;
+int PIR_VALUE, THRESHOLD = 400, MQ2_VALUE;
+const int pinoServo = 7;
+int pos;
+Servo s;
 
 //inicialização dos pinos/variáveis-----------------------------
 
@@ -55,6 +55,8 @@ void setup() {
   pinMode(BUZZER, OUTPUT);
   pinMode(MQ2, INPUT);
   dht.begin();
+  s.attach(pinoServo);
+  s.write(60);
 }
 
 //controle do sistema pelo teclado------------------------------
@@ -73,7 +75,7 @@ void serial() {
         digitalWrite(LED2, !digitalRead(LED2));
         Serial.print("Led 2 alterado.\n");
         break;
-      case 'c':
+      case 'd':
         digitalWrite(LED3, !digitalRead(LED3));
         Serial.print("Led 3 alterado.\n");
         break;
@@ -121,6 +123,18 @@ void serial() {
         Serial.print("Umidade: ");
         Serial.print(h);
         break;
+    }
+    if (DATA == 'o') {
+      Serial.print("Abrindo portão!");
+      for (pos == 60 ; pos < 150; pos++) {
+        s.write(pos);
+      }
+    }
+    if (DATA == 'c') {
+      Serial.print("Fechando portão!");
+      for (pos == 150; pos > 60; pos--) {
+        s.write(pos);
+      }
     }
   }
 }

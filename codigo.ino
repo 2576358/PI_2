@@ -28,7 +28,7 @@ DHT dht(DHTPIN, DHTTYPE);
 
 const unsigned long periodo_tarefa_1 = 1000;
 unsigned long tempo_tarefa_1 = millis();
-const unsigned long periodo_tarefa_2 = 2000;
+const unsigned long periodo_tarefa_2 = 1000;
 unsigned long tempo_tarefa_2 = millis();
 char DATA;
 int PIR_VALUE, THRESHOLD = 900, MQ2_VALUE;

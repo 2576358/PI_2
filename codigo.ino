@@ -4,6 +4,12 @@ Engenharia Eletrônica
 Projeto Integrador II
 Marcelo Poyer Radetski
 */
+/*
+INSTITUTO FEDERAL DE SANTA CATARINA
+Engenharia Eletrônica
+Projeto Integrador II
+Marcelo Poyer Radetski
+*/
 //atribuição pinos----------------------------------------------
 #define LED1 22
 #define LED2 23
@@ -31,9 +37,9 @@ unsigned long tempo_tarefa_1 = millis();
 const unsigned long periodo_tarefa_2 = 2000;
 unsigned long tempo_tarefa_2 = millis();
 char DATA;
-int PIR_VALUE, THRESHOLD = 400, MQ2_VALUE;
+int PIR_VALUE, THRESHOLD = 900, MQ2_VALUE;
 const int pinoServo = 7;
-int pos;
+int pos=0;
 Servo s;
 
 //inicialização dos pinos/variáveis-----------------------------
@@ -64,7 +70,6 @@ void setup() {
 void serial() {
   if (Serial.available() > 0) {
     DATA = Serial.read();
-    //Serial.print("Entrada recebida: ");
     Serial.println(DATA);
     switch (DATA) {
       case 'z':
@@ -108,32 +113,27 @@ void serial() {
         Serial.print("Pin A5: ");
         Serial.println(MQ2_VALUE);
         break;
-      case 'o':
-        Serial.print("Abrindo portão!");
-        for (pos == 60 ; pos < 150; pos++) {
-          s.write(pos);
-        }
-        break;
-      case 'c':
-        Serial.print("Fechando portão!");
-        for (pos == 150; pos > 60; pos--) {
-          s.write(pos);
-        }
     }
-    switch (DATA) {
-      case 'e':
+    if (DATA == 'e') {
         float t = dht.readTemperature();
         Serial.print("Temperatura: ");
         Serial.print(t);
         Serial.println(" *C");
-        break;
     }
-    switch (DATA) {
-      case 'w':
+    if (DATA == 'w') {
         float h = dht.readHumidity();
         Serial.print("Umidade: ");
         Serial.print(h);
-        break;
+    }
+    if (DATA == 'o'){
+      for(pos == 60 ; pos < 150; pos++){
+        s.write(pos);
+      }
+    }
+    if (DATA == 'c'){
+      for(pos == 150; pos > 60; pos--){
+        s.write(pos);
+      }
     }
   }
 }

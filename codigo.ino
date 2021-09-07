@@ -108,6 +108,17 @@ void serial() {
         Serial.print("Pin A5: ");
         Serial.println(MQ2_VALUE);
         break;
+      case 'o':
+        Serial.print("Abrindo portão!");
+        for (pos == 60 ; pos < 150; pos++) {
+          s.write(pos);
+        }
+        break;
+      case 'c':
+        Serial.print("Fechando portão!");
+        for (pos == 150; pos > 60; pos--) {
+          s.write(pos);
+        }
     }
     switch (DATA) {
       case 'e':
@@ -123,18 +134,6 @@ void serial() {
         Serial.print("Umidade: ");
         Serial.print(h);
         break;
-    }
-    if (DATA == 'o') {
-      Serial.print("Abrindo portão!");
-      for (pos == 60 ; pos < 150; pos++) {
-        s.write(pos);
-      }
-    }
-    if (DATA == 'c') {
-      Serial.print("Fechando portão!");
-      for (pos == 150; pos > 60; pos--) {
-        s.write(pos);
-      }
     }
   }
 }

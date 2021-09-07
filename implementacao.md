@@ -28,52 +28,47 @@ void serial() {
     Serial.println(DATA);
     switch (DATA) {
     
-    //controle iluminação---------------------
+    //controle iluminação----------------------
     
       case 'z':
         digitalWrite(LED1, !digitalRead(LED1));
         Serial.print("Led 1 alterado.\n");
         break;
         
-    //controle sensor de gás------------------
+    //controle sensor de gás-------------------
         
       case 'q':
         int MQ2_VALUE = analogRead(MQ2);
         Serial.print("Pin A5: ");
         Serial.println(MQ2_VALUE);
         break;
-        
-    //controle servo--------------------------    
-        
-      case 'o':
-        Serial.print("Abrindo portão!");
-        for (pos == 60 ; pos < 150; pos++) {
-          s.write(pos);
-        }
-        break;
-      case 'c':
-        Serial.print("Fechando portão!");
-        for (pos == 150; pos > 60; pos--) {
-          s.write(pos);
-        }
     }
     
-    //controle sensor de temperatura/umidade--
+    //controle sensor de temperatura/umidade---
     
-    switch (DATA) {
-      case 'e':
+    if (DATA == 'e') {
         float t = dht.readTemperature();
         Serial.print("Temperatura: ");
         Serial.print(t);
         Serial.println(" *C");
-        break;
     }
-    switch (DATA) {
-      case 'w':
+    if (DATA == 'w') {
         float h = dht.readHumidity();
         Serial.print("Umidade: ");
         Serial.print(h);
-        break;
+    }
+        
+    //controle servo---------------------------
+        
+    if (DATA == 'o'){
+      for(pos == 60 ; pos < 150; pos++){
+        s.write(pos);
+      }
+    }
+    if (DATA == 'c'){
+      for(pos == 150; pos > 60; pos--){
+        s.write(pos);
+      }
     }
   }
 }

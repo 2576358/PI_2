@@ -1,6 +1,6 @@
 # **Implementação**
 
-Na etapa de implementação juntamos todas as partes anteriores do projeto, tornamos as até então ideias em algo real. Transformamos o design em um produto, processo ou sistema, incluindo hardware, fabricação, codificação de software, teste e validação.
+Na etapa de implementação foram integradas todas as partes anteriores do projeto, tornando as ideias em algo real. Transformamos o design em um produto, processo ou sistema, incluindo hardware, fabricação, codificação de software, teste e validação.
 
 ### **Maquete**
 
@@ -8,17 +8,17 @@ Ainda não terminada.
 
 ### **Teste**
 
-Após obtenção dos materiais desejados foi feita uma fase de teste, com o intuito de verificar o bom funcionamento de cada componente. Grande parte destes testes foram realizados com exemplos encontrados na internet ou exemplos do próprio software Arduino. Todos os componentes foram testados, um de cada vez, para averiguar seu comportamento.
+Após obtenção dos materiais desejados foi feita uma fase de testes com o intuito de verificar o bom funcionamento de cada componente. Grande parte destes testes foram realizados com exemplos encontrados na internet ou exemplos do próprio software Arduino. Todos os componentes foram testados, um de cada vez, para averiguar seu comportamento e desempenho.
 
 ### **Código**
 
-Feitos todos os testes vamos para a parte do código, onde juntamos todos estes testes individuáis em um mesmo arquivo tomando as devidas medidas/cuidados para que tudo funcione conforme o esperado sem conflitos ou erros.
+Feitos todos os testes desenvolveu-se o código, onde foram integrados todos estes testes individuáis em um mesmo programa, tomando as devidas medidas/cuidados para que tudo funcione conforme o esperado sem conflitos ou erros.
 
 Além das funções para cada componente também foi utilizada uma função para multitask, de modo que possamos utilizar multiplos recursos ao mesmo tempo. Para mais informações sobre está função [clique aqui](https://github.com/LPAE/arduino_tutorial/tree/main/tarefas).
 
 #### **Controle Serial:**
 
-Está função serve para controlar alguns componentes pelo teclado, assim que uma tecla for pressionada ela irá executar a ação associada a esta tecla. Essa função serve principalmente como controle e está sendo utilizada para a iluminação, para apresentar os dados obtidos pelos sensores (gás/umidade/temperatura), e para o servo motor utilizado para o portão (tive de utilizar "if" para as quatro ultimas opções pois não consegui fazer funcionar de outra forma).
+Esta função serve para controlar alguns componentes pelo teclado. Assim que uma tecla for pressionada ela irá executar a ação associada a esta tecla. Essa função serve principalmente como controle e está sendo utilizada para a iluminação, apresentando os dados obtidos pelos sensores (gás/umidade/temperatura) e para o servo motor utilizado para o portão (tive de utilizar "if" para as quatro ultimas opções pois não consegui fazer funcionar de outra forma).
 
 ~~~C
 void serial() {
@@ -76,7 +76,7 @@ void serial() {
 
 #### **Sensor de movimentos:**
 
-Esta função irá executar quando o sensor de movimento detectar algo (estado lógico do PIR for HIGH), portanto, assim que um movimento for detectado pelo sensor ele irá ascender um led (LED10). Essa função pode ser utilizada em um corredor/garagem para ascender as luzes quando tiver alguém.
+Esta função irá executar quando o sensor de movimento detectar algo (estado lógico do PIR for HIGH), portanto, assim que um movimento for detectado pelo sensor ele irá acender um led (LED10). Essa função pode ser utilizada em um corredor/garagem para acender as luzes quando tiver alguém.
 
 ~~~C
 void pir(unsigned long tempo_atual) {
@@ -101,7 +101,7 @@ void pir(unsigned long tempo_atual) {
 
 #### **Sensor de gás:**
 
-A função do sensor de gás fica monitorando constantemente o "nível" de gás no ambiente, assim que esse nível passar acima de um limite específico (THRESHOLD) ele irá acionar o BUZZER para alertar o usuário.
+A função para o sensor de gás é ficar monitorando constantemente o "nível" de gás no ambiente. Assim que esse nível passar de um limite específico (THRESHOLD) ele irá acionar o BUZZER para alertar o usuário.
 
 ~~~C
 void mq2(unsigned long tempo_atual) {
@@ -121,6 +121,6 @@ void mq2(unsigned long tempo_atual) {
 
 Algumas considerações:
 
-Acabei desistindo de implementar a matriz led 8x8 pois fiquei desencorajado ao ver exemplos de códigos. Também acabei queimando o adaptador para o arduino, ao liga-lo na tomada ouvi um estouro e aquele cheirinho de queimado, por sorte ele não estava conectado ao arduino no momento do ocorrido.
+Não foi implementada a matriz led 8x8, pois os códigos eram demasiadamente laboriosos, sem erequecimento técnico ou conceitual. Houve problemas técnicos (queima do adaptador para o arduino).
 
-Isso resume o código atual, para ver o código completo [clique aqui](https://github.com/MarceloPoyer/Projeto_Integrador_2/edit/main/codigo.ino).
+Isso resume o código atual. Para ver o código completo [clique aqui](https://github.com/MarceloPoyer/Projeto_Integrador_2/edit/main/codigo.ino).

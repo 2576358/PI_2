@@ -1,11 +1,11 @@
 # **Design**
 
-Uma das partes do design do projeto é a concepção de maquetes eletrônicas para ter maior visibilidade do desenvolvimento do mesmo, possibilitando desenvolver ideias de design com mais precisão e apresentar o projeto com mais realismo de modo que fique mais fácil discorrer sobre a sua implementação. Isso também ajuda a identificar possíveis problemas de modo a otimizar o projeto, facilitando a comunicação com os demais envolvidos.
+Uma das partes do design do projeto é a concepção de maquetes eletrônicas para ter maior visibilidade do desenvolvimento do mesmo, possibilitando desenvolver ideias de design com mais precisão, apresentando o projeto com mais realismo. Com a maquete fica mais fácil discorrer sobre a sua implementação, tanto do ponto de vista técnológico quanto espacial. Isso também ajuda a identificar possíveis problemas de modo a otimizar o projeto, facilitando a comunicação com os demais envolvidos.
 
 ## **Componentes**
 
-Após uma breve discussão sobre o design chegamos a parte de seleção de componentes, onde devemos selecionar as peças/objetos a serem utilizados no projeto. Entramos então, em uma discussão mais profunda, pois é preciso pesquisar as características e funcionalidades dos componentes e verificar sua implementação/compatibilidade no sistema de modo a alcançar os objetivos:
-* **Segurança**: Não se deseja a utilização de componentes em situações extremas ou precárias, pois podem por em risco o usuário;
+Após uma breve discussão sobre o design chegamos na parte de seleção dos componentes, selecionando as peças/objetos a serem utilizados no projeto. Em seguida entramos na discussão mais profunda, pois era necessário pesquisar as características e funcionalidades dos componentes, assim como verificar sua implementação/compatibilidade no sistema de modo a alcançar os seguintes objetivos:
+* **Segurança**: Não se deseja a utilização de componentes em situações extremas ou precárias, pois podem por em risco a saúde do usuário;
 * **Conforto**: Não se buscam componentes de uso excessivamente complexo dificultando a utilização;
 * **Êconomia**: Busca-se um orçamento razoável e um gasto de energia mínimo para o bom funcionamento do sistema.
 

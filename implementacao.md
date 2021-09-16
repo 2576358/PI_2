@@ -4,7 +4,10 @@ Na etapa de implementação foram integradas todas as partes anteriores do proje
 
 ### **Maquete**
 
-Ainda não terminada.
+![IMG_20210915_220247013](https://user-images.githubusercontent.com/84546006/133652158-fba289fc-c930-4155-970c-1a6cb6a95d74.jpg)
+![IMG_20210915_220206258](https://user-images.githubusercontent.com/84546006/133652180-ad45171c-d06a-4a7c-ac90-8967cfd79b6f.jpg)
+![IMG_20210915_220133964](https://user-images.githubusercontent.com/84546006/133652226-289709e0-e7e8-4322-bf33-338b4fc3c713.jpg)
+![IMG_20210915_220224399](https://user-images.githubusercontent.com/84546006/133652212-db5ae4d4-296a-4495-87d1-454b1a2ba80e.jpg)
 
 ### **Teste**
 

@@ -130,4 +130,4 @@ Isso resume o código atual. Para ver o código completo [clique aqui](https://g
 
 Vídeo de apresentação da maquete.
 
-https://youtu.be/Ms0efQEhomI
+[![Watch the video](https://img.youtube.com/vi/Ms0efQEhomI/maxresdefault.jpg)](https://youtu.be/Ms0efQEhomI)

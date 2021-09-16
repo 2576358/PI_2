@@ -127,3 +127,7 @@ Algumas considerações:
 Não foi implementada a matriz led 8x8, pois os códigos eram demasiadamente laboriosos, sem erequecimento técnico ou conceitual. Houve problemas técnicos (queima do adaptador para o arduino).
 
 Isso resume o código atual. Para ver o código completo [clique aqui](https://github.com/MarceloPoyer/Projeto_Integrador_2/edit/main/codigo.ino).
+
+Vídeo de apresentação da maquete.
+
+https://youtu.be/Ms0efQEhomI
